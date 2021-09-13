@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+:root {
+    --navmenu-color:#6A6A6A;
+    --button-bg-primary: #F26A63;
+    --section-bg-primary: #F26A63;
+    --button-bg-secondary: #2B66B9;
+    --button-text-white: #FFF;
+    --text-color-primary: #000;
+    --text-color-secondary: #6A6A6A;
+    --text-color--blue: #365A9D;
+    --bg-blue:rgba(158,196,250,0.16);
+    --section-bg-blue:#EFF6FE;
+}
+
+/* utility */
+button{
+    outline: none!important;
+    border: none;
+    color: var(--button-text-white);
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.btn-bg-primary{
+    background: var(--button-bg-primary);
+}
+
+.btn-bg-secondary{
+    background: var(--button-bg-secondary);
+}
+
+.btn-style-1{
+    min-width: 135px;
+    padding: 5.5px 10px;
+}
+
+.btn-style-2{
+    min-width: 175px;
+    padding: 5.5px 10px;
+}
+
+.header-2{
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.page-card{
+    background: var(--bg-blue);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.page-card-title{
+    color: var(--text-color--blue);
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.w-500{
+    font-weight: 500;
+}
+
+.cards-wrapper{
+    margin-top: 2em;
+}
+
+.section-bg-blue{
+    background: var(--section-bg-blue);
+}
+
+.section_bg-primary{
+    background: var(--section-bg-primary);
+}
+
+/* nav */
+nav{
+    padding-top: 1.5em;
+}
+nav .nav-item{
+    min-width: 100px;
+}
+
+nav .nav-item .nav-link{
+    color: var(--navmenu-color);
+    font-size: 0.87em;
+}
+
+.brand-logo{
+    max-width: 75%;
+    height: auto;
+}
+
+.nav-button{
+    min-width: 150px;
+    background: var(--button-bg-primary);
+    border: 3px solid #fff;
+    padding: 5px 10px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* banner */
+.hero-section{
+    position: relative;
+}
+
+.hero-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header{
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text-color-primary);
+    margin-bottom: 0.5em;
+}
+
+.content-1{
+    font-size: 0.8em;
+    margin: 0;
+    color: var(--text-color-secondary);
+}
+
+.banner-btn-wrapper{
+    margin-top: 2em;
+}
+
+/* restaurant-marketing-section  */
+.marketing-cards-wrapper .page-card{
+    margin-bottom: 1.5em;
+    min-height: 7em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* save-money-section */
+.pkg-card{
+    background: #3B73C3;
+    border-radius: 20px;
+    padding: 2em 15px;
+}
+
+.bgdark-card-title{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-outlined{
+    background: transparent;
+    border: 1px solid #3B73C3;
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+}
+
+.outlined-card-title{
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.card-offerlabel-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-offerlabel-wrapper .button{
+    min-width: 135px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 0.78em;
+    text-align: center;
+}
+
+.title-border{
+    border-bottom: 5px solid #3B73C3;
+    width: 15%;
+}
+
+.pkg-detailslist ul{
+    list-style-position: outside;
+    margin-left: 1em;
+    margin-top: 2em;
+    list-style-image: url('../images/check.png');
+}
+
+.pkg-detailslist ul li{
+    margin-bottom: 0.8em;
+}
+
+.pkg-detailslist li{
+    font-size: 0.8em;
+    color: #1E3B79;
+}
+
+.divider{
+    background: #3B73C3;
+}
+
+.price-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    border-top: 1px solid #3B73C3;
+    padding-top: 1em;
+}
+
+.price-wrapper p{
+    color: #1E3B79;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.33;
+}
+
+.section-padding{
+    padding: 4.5em 0;
+}
+
+.btn_outline{
+    background: transparent;
+    border: 1px solid #fff;
+    min-width: 150px;
+    font-size: 0.8em;
+    padding: 7px;
+    text-align: center;
+}
+
+.business-section button{
+    margin-top: 2em;
+}
+
+/* footer */
+.footer-links-wrapper{
+    margin-top: 2.5em;
+}
+
+footer .row .col-xl-3{
+    text-align: center;
+}
+
+.section_bg-secondary{
+    background: #1E3B79;
+}
+
+.footer-links-wrapper a{
+    color: #000;
+    font-size: 0.89em;
+}

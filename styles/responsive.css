@@ -1,0 +1,65 @@
+@media screen and (min-width: 1200px) {
+    .main-header{
+        font-size: 3.5em;
+    }
+
+    .pkg-card{
+        padding: 2em 15px 5em 2em;
+    }
+
+    .card-outlined{
+        padding: 20px 2em;
+    }
+
+    footer .row .col-xl-3:not(:last-child)::after{
+        content: "|";
+        position: relative;
+        left: 25px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-img{
+        position: relative;
+        bottom: 5em;
+        z-index: -1;
+        right: -5em;
+    }
+    
+}
+
+
+/* max */
+@media screen and (max-width: 992px) {
+    .hero-section{
+        padding: 2em 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-header{
+        text-align: center;
+        font-size: 2em;
+    }
+    .hero-section .content-1{
+        text-align: center;
+    }
+    .banner-btn-wrapper{
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    .navbar-nav .nav-item:first-child{
+        margin-top: 1em;
+    }
+    .card-outlined {
+        margin-bottom: 1.5em;
+    }
+    .save-money-section .title-3{
+        margin-top: 1.5em;
+    }
+    .section-padding {
+        padding: 3.5em 0;
+    }
+}
+
+
