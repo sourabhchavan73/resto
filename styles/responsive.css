@@ -81,7 +81,12 @@
     }
 }
 
-
+@media screen and (max-width: 576px) {
+    .modal-right{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}
 
 
 
