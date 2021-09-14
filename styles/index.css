@@ -18,6 +18,9 @@ body{
     --text-color--blue: #365A9D;
     --bg-blue:rgba(158,196,250,0.16);
     --section-bg-blue:#EFF6FE;
+    --modal-bg-dark: #1E3B79;
+    --form-labels: #1E3B79;
+    --modal-bg: #EFF6FE;
 }
 
 /* utility */
@@ -79,6 +82,15 @@ button{
 
 .section_bg-primary{
     background: var(--section-bg-primary);
+}
+
+.cur-normal{
+    cursor: auto;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* nav */
@@ -263,4 +275,154 @@ footer .row .col-xl-3{
 .footer-links-wrapper a{
     color: #000;
     font-size: 0.89em;
+}
+
+/* modal */
+.modal-left{
+    background: var(--modal-bg-dark);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 45px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.modal-right{
+    background: var(--modal-bg);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+}
+
+.modal-form{
+    padding: 15px;
+}
+
+.page-form-label{
+    display: inline-block;
+    margin: 0;
+    font-size: 0.4em;
+    color: var(--form-labels);
+}
+
+.page-form-input, input:-internal-autofill-selected {
+    border: 1px solid #1E3B79;
+    outline: none;
+    width: 100%;
+    font-size: 0.5em;
+    padding: 7px 10px;
+    background: transparent;
+    color: var(--form-labels);
+    border-radius: 2px;
+}
+
+.page-form-input input:-webkit-autofill {
+    -webkit-box-shadow:0; /* Change the color to your own background color */
+    -webkit-text-fill-color: var(--form-labels);
+    background: #EFF6FE;
+}
+.page-form-input input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0;
+    -webkit-text-fill-color: var(--form-labels);
+    background: #EFF6FE;
+}
+
+
+
+.form-control:focus {
+    box-shadow: none;
+    background: transparent;
+    border: 1px solid #1E3B79;
+}
+
+.input-group-text{
+    color: var(--form-labels);
+    font-size: 11px;
+}
+
+.modal-form button{
+    font-size: 11.5px;
+    padding: 9px;
+    margin-top: 2.5em;
+}
+
+.modal-form .form-group{
+    margin-bottom: 0.2em;
+}
+
+.adv-modal .modal-content{
+    background: 0;
+    border: 0;
+}
+
+.adv-modal-header{
+    font-size: 1.8em;
+    color: #fff;
+    line-height: 1.66;
+    font-weight: 600;
+}
+
+.adv-modal-close{
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    z-index: 1;
+}
+
+/* userformmodal */
+.project-modal-header{
+    color: #000;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.project-modal-content{
+    color: #6A6A6A;
+    font-size: 0.8em;
+}
+
+.userFormModal-modal-close{
+    position: absolute;
+    top: 27px;
+    right: 3em;
+    z-index: 1;
+}
+
+/* thank you */
+.thank-you-section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.page-text-link{
+    color: #F77172;
+    font-size: 0.8em;
+}
+
+.thank-you-card{
+    padding: 15px;
+    min-height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    justify-content: center;
+}
+
+.thank-youImg-wrapper{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 1.5em;
+}
+
+.thankyou-header{
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 600;
 }
